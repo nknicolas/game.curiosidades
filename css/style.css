@@ -1,0 +1,15 @@
+/* Aula 01 - 01/04/2023 */
+
+body ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+#menu{
+    height:20px ;
+    width:100% ;
+}
+
+#menu #logo img{
+    height: 20px;
+}
