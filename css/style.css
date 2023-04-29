@@ -27,13 +27,13 @@ body ul{
 }
 
 #log img a:hover {
- box-shadow: 4px 4px 6px #0000007a;
- transition: 0.3s;
+    box-shadow: 4px 4px 6px #0000007a;
+    transition: 0.3s;
 }
 
 #logo img {
  float: left;
- height: 35px;
+ height: 45px;
  position: relative;
  top: 0px;
  left: 0px;
@@ -43,12 +43,12 @@ body ul{
     position: fixed;
     z-index: 90;
     box-sizing: border-box;
-    height: 70px;
+    height: 57px;
     padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #e7e7e7;
+    background: rgba(0, 0, 0, 0.05);
 
 }
 #menu {
@@ -60,8 +60,77 @@ body ul{
 display: none;
 
 }
-#carouselExempleInterval {
+#carouselExampleInterval {
  position: relative;
  z-index:   10;
- padding-top: 80px;
+ padding-top: 55px;
 }
+#carouselExampleInterval .carousel-control-prev-icon {
+    color: red;
+}
+/* Estilo Css Banner */
+.section-banner-home {
+    width: 100%;
+    height: 600px;
+    margin-top: 0px;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.section-banner-home img{
+    height: 500px;
+}
+.section-banner-home .texto-banner{
+    margin-top: 30px;
+    font-size: 22px;
+}
+.section-banner-home .texto-banner h1 {
+    font-size: 30px;
+    width: 60%;
+    font-weight: 500;
+    padding-bottom: 20x;
+
+}
+.section-banner-home .texto-banner p {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.section-banner-home .texto-banner a {
+    color:rgb(255, 255, 255) ;
+    text-decoration: none;
+    background-color: #0000007a;
+    padding: 4px 14px;
+    font-size: 15px;
+}
+/* Fim CSS Banner */
+
+/* CSS Destaque */
+.destaque h2 {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+.destaque p {
+    width: 77%;
+    text-align: center;
+    font-size: 14px;
+    margin: 30px auto;
+}
+.destaque figcaption {
+ font-size: 13px;
+ color: #000;
+ text-decoration: none;
+ font-weight: bold;
+ text-align: center;
+}
+.destaque a {
+ justify-content: center;
+ display: flex;
+ text-decoration: none;
+ color: #30acbd;
+ font-size: 18px;
+ font-weight: bold;
+ margin: 30px 0;
+
+}
+/* Fim Destaque */
