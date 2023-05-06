@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 /* Aula 01 - 01/04/2023 */
 
 body ul{
@@ -7,16 +8,17 @@ body ul{
 #header #menu a{
     color:black;
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: 'Bruno Ace SC.+';
     text-transform: uppercase;
     font-size: 1.25em;
     transition: 0.3s;
+    margin-right: 1rem;
 
 }
 .linkMenu a:hover {
  font-size: 1.3em;
  transition: 0.3s;
- text-shadow: 4px 4px 6px #0000007a;
+ text-shadow: 4px 4px 6px black;
 }
 
 #header #menu a:hover {
@@ -37,10 +39,11 @@ body ul{
  position: relative;
  top: 0px;
  left: 0px;
+ border-radius: 200px; /* Criar bordar circular na imagem */
 }
 #header{
     width: 100%;
-    position: fixed;
+    position: relative;
     z-index: 90;
     box-sizing: border-box;
     height: 57px;
@@ -49,6 +52,8 @@ body ul{
     align-items: center;
     justify-content: space-between;
     background: rgba(0, 0, 0, 0.05);
+    box-shadow: 6px 6px 8px #0000007a;
+    transition: 0.3s;
 
 }
 #menu {
@@ -60,13 +65,35 @@ body ul{
 display: none;
 
 }
+/*
 #carouselExampleInterval {
  position: relative;
  z-index:   10;
  padding-top: 55px;
 }
+*/
+
 #carouselExampleInterval .carousel-control-prev-icon {
     color: red;
+}
+
+#carouselExampleInnterval {
+    position: relative;
+    z-index: 10;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 6px 6px 8px black;
+    transition: 0.3s;
+    place-items: normal legacy;
+    margin-block: 10px;
+    height: auto;
+
+}
+#carouselExampleInteval .carousel-inner img {
+    max-height: 550px;
+    width: 100%;
+    box-shadow: 6px 6px 8px #0000007a;
+    transition: 0.3s;
 }
 /* Estilo Css Banner */
 .section-banner-home {
@@ -88,18 +115,26 @@ display: none;
     width: 60%;
     font-weight: 500;
     padding-bottom: 20x;
+    color: black;
 
 }
 .section-banner-home .texto-banner p {
     font-size: 15px;
     margin-bottom: 20px;
+    color: black;
 }
 .section-banner-home .texto-banner a {
-    color:rgb(255, 255, 255) ;
+    color: black;
     text-decoration: none;
-    background-color: #0000007a;
+    background-color: rgb(181, 203, 228);
     padding: 4px 14px;
+    font-size: 18px;
+}
+.section-banner-home .texto-banner a:hover{
+    color: black;
+    text-shadow: 2px 2px 4px #0000007a;
     font-size: 15px;
+    font-weight: bold;
 }
 /* Fim CSS Banner */
 
@@ -133,4 +168,74 @@ display: none;
  margin: 30px 0;
 
 }
-/* Fim Destaque */
+/* Fim CSS Destaque */
+
+/* Css Novidades */
+
+.novidades .text-body {
+    width: 80%;
+    margin: 70px auto;       
+}
+.novidades h2{
+    color: #000;
+    font-size: 26px;
+    width: 70%;
+}
+.novidades a {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    text-decoration-color: violet;
+    padding:6px 12px;
+    background-color: rgb(0, 68, 194);
+    font-weight: 400;
+}
+/* Fim CSS Novidades */
+
+/* Início CSS Galeria */
+
+.galeria {
+    margin: 60px auto 20px;    
+}
+.galeria h2 {
+    text-align: center;
+    font-size: 24px;    
+}
+.galeria p {
+    text-align: center;
+    width: 50%;
+    margin: 14px auto 50px;
+}
+.galeria .gallery {
+    width: 30%;
+    margin: 14px auto 50px;
+}
+/* Fim CSS Galeria */
+
+/* Início CSS Footer */
+
+
+.rodape {
+    padding: 50px 50px 0;    
+}
+.rodape .info-contato p {
+    margin: 0px;
+}
+.rodape a {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+}
+.rodape a:hover {
+    font-weight: bold;
+}
+.rodape .redes_sociais {
+    display: inline-block;
+}
+.rodape .redes_sociais img {
+    width: 45px;
+    height: 40px;
+}
+.rodape p.direitos {
+    text-align: center;
+    margin-top: 40px;
+}
