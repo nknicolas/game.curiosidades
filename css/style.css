@@ -39,7 +39,7 @@ body ul{
  position: relative;
  top: 0px;
  left: 0px;
- border-radius: 200px; /* Criar bordar circular na imagem */
+ border-radius: 120px; /* Criar borda circular na imagem */
 }
 #header{
     width: 100%;
@@ -133,7 +133,7 @@ display: none;
     #hamburger {
         border-top: 3px solid; /*Melhorando o hamburger >> Espessura de cada linha */
         width: 35px;/*Melhorando o hamburger >> Largura */
-        color: rgb(71, 71, 71);/*Melhorando a cor do hamburger >> */
+        color: rgb(0, 0, 0);/*Melhorando a cor do hamburger >> */
     }
     #hamburger::after,
     #hamburger::before {
@@ -281,6 +281,19 @@ display: none;
 .rodape {
     padding: 50px 50px 0;    
 }
+.rodape .container #logo-rodape img {
+    height: 50%;
+    width: 50%;
+    padding-left: 10px;
+    transition: transform .3s;
+    display: block;
+    border-radius: 100px;
+}
+.rodape .container #logo-rodape img:hover{
+    transform: scale(1.2);
+    box-shadow:0 0 10px rgb(255, 255, 255);
+}
+
 .rodape .info-contato p {
     margin: 0px;
 }
@@ -292,14 +305,65 @@ display: none;
 .rodape a:hover {
     font-weight: bold;
 }
-.rodape .redes_sociais {
+.rodape .redes-sociais {
     display: inline-block;
 }
-.rodape .redes_sociais img {
+.rodape .redes-sociais img {
     width: 45px;
     height: 40px;
+    padding-left: 0;
+    margin-left: 1rem;
+    transition: transform .3s;
+    border-radius: 120px; /* Arredondando div do objeto redes sociais  */
+}
+.rodape .redes-sociais img:hover{
+    transform: scale(1.2);
+    box-shadow:0 0 10px white;
 }
 .rodape p.direitos {
     text-align: center;
     margin-top: 40px;
 }
+/* Início CSS Streaming */
+.embed-container {
+    position: relative;
+    padding-bottom: 0;
+    height: auto;
+    max-width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 30px;
+    padding-top: 80px;
+    padding-right:30px ;
+    display: flex;
+    padding-bottom: 40px;
+}
+.embed-container h2 {
+    text-align: center;
+    font-size: 24px;
+}
+.embed-container p {
+    text-align: center;
+    font-size: 24px;
+}
+.embed-container iframe {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    border-radius: 1rem;
+    box-shadow: gray 0.5rem 0.5rem 0.3rem;
+    transition: transform .3s;
+    display: flex;
+}
+.embed-container iframe:hover {
+    flex: 1;
+    z-index: 1;
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.446);
+}
+.embed-container .col-lg-4 {
+    margin-top: 40px;
+}
+/* Fim CSS Streaming */
