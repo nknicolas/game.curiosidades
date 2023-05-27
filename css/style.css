@@ -283,15 +283,14 @@ display: none;
 }
 .rodape .container #logo-rodape img {
     height: 50%;
-    width: 50%;
-    padding-left: 10px;
+    width: 40%;
     transition: transform .3s;
     display: block;
     border-radius: 100px;
 }
 .rodape .container #logo-rodape img:hover{
     transform: scale(1.2);
-    box-shadow:0 0 10px rgb(255, 255, 255);
+    box-shadow:0 0 10px rgb( 0, 0, 0.446);
 }
 
 .rodape .info-contato p {
@@ -317,53 +316,196 @@ display: none;
     border-radius: 120px; /* Arredondando div do objeto redes sociais  */
 }
 .rodape .redes-sociais img:hover{
-    transform: scale(1.2);
+    transform: scale(1.3);
     box-shadow:0 0 10px white;
 }
 .rodape p.direitos {
     text-align: center;
     margin-top: 40px;
 }
+/* Fim CSS Footer */
 /* Início CSS Streaming */
+
 .embed-container {
     position: relative;
-    padding-bottom: 0;
+    padding-bottom: 40px;
     height: auto;
-    max-width: 100%;
+    width: 100%;
     margin-top: 0;
     margin-bottom: 0;
-    padding-left: 30px;
     padding-top: 80px;
-    padding-right:30px ;
-    display: flex;
-    padding-bottom: 40px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 .embed-container h2 {
     text-align: center;
     font-size: 24px;
+    font-weight: bold;
 }
 .embed-container p {
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
 }
 .embed-container iframe {
     position: relative;
     top: 0;
     left: 0;
     width: 100%;
-    height: 200px;
+    height: 190px;
     border-radius: 1rem;
-    box-shadow: gray 0.5rem 0.5rem 0.3rem;
+    box-shadow: gray 0.5em 0.5em 0.3em;
     transition: transform .3s;
-    display: flex;
 }
 .embed-container iframe:hover {
     flex: 1;
     z-index: 1;
-    transform: scale(1.2);
+    transform: scale(1.1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.446);
 }
 .embed-container .col-lg-4 {
-    margin-top: 40px;
+    margin-top: 45px;
 }
+
+.embed-container .col-lg-6 {
+    margin-top: 45px;
+}
+
 /* Fim CSS Streaming */
+
+/* Início CSS Contato */
+.contato {
+    margin-top: 45px;
+}
+.form_main {
+    width: 100%;
+}
+.form_main h4 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 22px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.col-md-6 #txt-local {
+    margin-top: 0px;
+    border-bottom: 1px solid #706cf6;
+    margin-bottom: 16px;
+    position: relative;
+}
+.text-left {
+    border-bottom: 1px solid #a3aff0;
+    padding-bottom: 9px;
+    position: relative;
+}
+.text-center {
+    border-bottom: 1px solid #f60000;
+    padding-right: 9px;
+    position: relative;
+}
+.text-left span {
+    background: #111e8d none repeat scroll 0 0;
+    bottom: -2px;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 0px;
+}
+.form-horizontal {
+    border-radius: 107px;
+    padding: 6px;
+}
+.form-control[type="text"] {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px 0 10px 5px;
+    width: 100%;
+}
+.form-control-msg[type="email"] {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px 0 10px 5px;
+    width: 100%;
+}
+.form-control-msg[type="text"] {
+    margin: 10px 0 0;
+    padding: 10px 0 10px 5px;
+    width: 100%;
+}
+.formbutton[type="submit"] {
+    -moz-box-shadow: inset 0px 1px 0px 0px #87c0e6;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #87c0e6;
+    box-shadow: inset 0px 1px 0px 0px #87c0e6;
+    background-color: #297ee6;
+    display: inline-block;
+    border: 1px solod #2489d6;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 35px;
+    margin: 10px 0;
+    padding: 0;
+    text-transform: uppercase;
+    width: 30%;
+}
+.formbutton:hover {
+    background-color: #31a1de;
+}
+.formbutton:active {
+    position: relative;
+    top: 1px;
+}
+.txt2:hover {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #5793ef;
+    transition: all 0.5s ease 0s;
+}
+/* Fim CSS Contato */
+/* Início CSS Map */
+.map {
+    width: 100%;
+    height: 100%;
+}
+/* Fim CSS Map */
+
+/* Início CSS Whats */
+.whatsapp {
+    position: fixed;
+    z-index: 2;
+    bottom: 70px;
+    right: 25px;
+}
+.whatsapp img {
+    height: 60px;
+}
+/* Início efeito Pulse */
+.pulse-whats {
+    animation: pulse 0.7s infinite;
+    margin: 0 auto;
+    display: table;
+    margin-top: 50px;
+    animation-direction: alternate;
+    -webkit-animation-direction: pulse;
+    animation-name: pulse;
+}
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        -webkit-filter: brightness(100%);
+    }
+    100% {
+        -webkit-transform: scale(1.3);
+        -webkit-filter: brightness(200%);
+    }
+}
+@keyframes pulse {
+    0%{
+        transform: scale(1);
+        filter: brightness(100%);
+    }
+    100%{
+        transform: scale(1.3);
+        filter: brightness(200%);
+    }
+}

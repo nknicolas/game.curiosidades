@@ -32,246 +32,107 @@
         </nav>
     </header>
     <!-- Fim menu responsivo -->
-    <!--x-->
-    <!-- Início corousel página principal-->
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
-        <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="2000">
-             <img 
-                src="./img/carrousel_1.jpg" 
-                class="d-block w-100" 
-                alt="..." 
-              />
-             
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-                <img
-                  src="./img/carrousel_2.jpg"
-                  class="d-block w-100" 
-                  alt="..."
-                />
-             
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <img
-                 src="./img/carrousel_3.jpg"
-                  class="d-block w-100" 
-                  alt="..."
-              />
-             
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <img
-                 src="./img/carrousel_4.jpg"
-                 class="d-block w-100" 
-                 alt="..."
-              />
-             
+    <!--Início Form Contato-->
+    <div class="contato">
+        <div class="container">
+            <div class="row">
+                <!-- Início Formulário -->
+                <div class="col-md-6">
+                    <!-- Início da tag section com texto -->
+                    <section class="col-12">
+                     <h2>Entre em contato conosco!</h2>
+                     <p>Para duivdas ,elogios ou reclamações insira suas informações abaixo</p>
+                 </section>
+                    <!-- Fim da tag section com texto -->
+                
+                
+                    <div class="form_main">
+                        <form class="form-horizontal" method="post" action="">
+                            <fieldset>
+                                <h4 class="text-left header">Preencha suas informações: <span></span></h4>
+                                <!-- Início campo 1 do form -->
+                                <div class="form-group">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <input id="fname" name="name" type="text" placeholder="Insira seu primeiro nome" class="form-control" required>
+                                    </div>
+                                </div>
+                                <!-- Fim campo 1 do form -->
+                                <!-- Início campo 2 do form -->
+                                <div class="form-group">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <input id="lname" name="name" type="text" placeholder="Insira seu último nome" class="form-control" required>
+                                    </div>
+                                </div>
+                                <!-- Fim campo 2 do form -->
+                                <!-- Início campo 3 do form -->
+                                <div class="form-group">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <input id="email" name="email" type="text" placeholder="Insira seu email" class="form-control" required>
+                                    </div>
+                                </div>
+                                <!-- Fim campo 3 do form -->
+                                <!-- Início campo 4 do form -->
+                                <div class="form-group">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <input id="phome" name="phone" type="text" placeholder="Insira seu telefone" class="form-control" required>
+                                    </div>
+                                </div>
+                                <!-- Fim campo 4 do form -->
+                                <!-- Início campo 5 do form -->
+                                <div class="form-group">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <textarea id="message" name="message" type="text" placeholder="Insira sua mensagem ,que retornaremos o mais breve possível" class="form-control-msg" rows="7" required></textarea>
+                                    </div>
+                                </div>
+                                <!-- Fim campo 5 do form -->
+                                <!-- Início button submit -->
+                                <div class="form-group">
+                                    <div class="col-md-12 text-center">
+                                        <button type="submit" class="formbutton">Enviar</button>
+                                    </div>
+                                </div>
+                                <!-- Fim button submit -->
+
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                <!-- Fim Formulário -->
+                <!-- Início Maps -->
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="panel panel-default">
+                            <section id="txt-local" class="text-center header">
+                                <h2>Onde estamos localizados</h2>
+                                <h4>Endereço:</h4>
+                                <p>Avenida ABC, 123 <br />
+                                Centro, São Paulo - SP - CEP: 12345-000
+                                </p>
+                            </section>
+                            <div class="map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.88772209794!2d-46.648957824007546!3d-23.53654037881698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5843deb99025%3A0xb23619858bc7e63e!2sSenai%20Santa%20Cec%C3%ADlia%20(Inform%C3%A1tica)!5e0!3m2!1spt-BR!2sbr!4v1685200029747!5m2!1spt-BR!2sbr" width="650" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Fim Maps -->
             </div>
         </div>
-            <!-- Alt + Shift + Seta para baixo,copia contéudo-->
-            <!-- Início controle carousel -->
-            <button
-             class="carousel-control-prev"
-             data-bs-target="#carouselExampleInterval"
-             type="button"
-             data-bs-slide="prev"
-            >
-
-             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-             <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-             class="carousel-control-next"
-             data-bs-target="#carouselExampleInterval"
-             type="button"
-             data-bs-slide="next"
-            >
-
-             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-             <span class="visually-hidden">Next</span>
-            </button>    
     </div>
-  <!-- Fim controle carousel -->
-  <!-- Fim carousel pagina principal -->
-  <!-- Inicio Banner -->
-  <div class="section-banner-home">
-    <div class="container-fluid">
-        <div class="row m-0">
-            <div class="col-12 col-md-6">
-                <figure>
-                    <img src="img/1080x1080 2.jpg" class="img-fluid" alt="banner-home">
-                </figure>
-            </div>
-            <div class="col-12 col-md-6">
-                <section class="texto-banner d-none d-md-block">
-                    <h1>Venha ver as curiosidades de R6.</h1>
-                    <p class="d-none d-md-block">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis ipsum, incidunt ullam at dolorum qui officiis? Iste, ipsa assumenda labore quam soluta, nobis libero alias voluptate sed consequuntur, sapiente voluptatum!</p>
-                    <a href="produtos.html">Saiba Mais</a>
-                </section>
-
-            </div>
-
-        </div>
-
-    </div>
-
-  </div>
-  <!-- Fim Banner-->
-  <!-- Inicío Destaque -->
-  <div class="destaque">
-    <div class="container">
-        <div class="row d-flex justify-content-center">
-            <!-- Inicío da tag section do texto de destaque -->
-            <section class="col-12">
-                <h2>oi</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse minima sed unde odit voluptatem porro molestias hic reiciendis sit earum? Atque eos, commodi ex expedita temporibus esse praesentium eveniet saepe.</p>
-
-            </section>
-            <!-- Fim de tag section do texto de destaque -->
-            <!-- Inicío imagem 1 -->
-            <div class="col-6 col-md-2 pr-0">
-                <figure>
-                    <a href="produtos.html"><img src="./img/1080x1080 3.jpg" alt="figura-destaque" width="100%"></a>
-                    <figcaption>Raibow  Six  Siege <br> 01 de dezembro 2015 </figcaption>
-                </figure>
-            </div>
-            <!-- Fim de imagem 1 -->
-            <!-- Inicío imagem 2 -->
-            <div class="col-6 col-md-2 pr-0">
-                <figure>
-                    <a href="produtos.html"><img src="./img/1080x1080 3.jpg" alt="figura-destaque" width="100%"></a>
-                    <figcaption>Raibow  Six  Siege <br> 01 de dezembro 2015 </figcaption>
-                </figure>
-            </div>
-            <!-- Fim de imagem 2 -->
-            <!-- Inicio Saiba Mais -->
-            <div class="col-12">
-                <a href="#">Saiba Mais</a>
-
-            </div>
-            <!-- Fim Saiba Mais -->
+ <!-- Fim Form Contato -->
+ <!-- Início whatsapp -->
+    <div class="whatsapp">
+        <div class="container-grid logo-whats">
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=15981651322&text=Ol%C3%A1%20vim%20do%20site%20e%20gostaria%20de%20mais%20infoma%C3%A7%C3%B5es"><img src="./img/whatsapp.png" class="pulse-whats" alt="Contato Whatsapp"></a>
 
         </div>
 
     </div>
 
-  </div>
-  <!-- Fim Destaque -->
-  <!-- Início do texto das novidades -->
-  <div class="novidades" id="novidades-mobile">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6">
-                <section class="text-body">
-                    <h2>Conheça nossa novidades</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo eius odio nostrum quos ratione debitis voluptatibus quidem enim, quae, aperiam, dignissimos porro facilis deleniti est! Quod repudiandae qui debitis neque!</p>
-                    <a class="btn-banner" href="#" target="_blank">Saiba Mais</a> 
-
-                </section>
-            </div>
-            <!-- Fim do Texto Novidades -->
-            <!--Início da imagem Novidade -->
-            <div class="col-md-6">
-                <figure>
-                    <img src="./img/1080x1080.jpg" class="img-fluid" alt="banner-home">
-                </figure>
-
-            </div>
-            <!-- Fim da imagem Novidades -->
-        </div>
-    </div>
-  </div>
- <!-- Início Galeria -->
- <div class="galeria d-flex align-itens-center">
-    <div class="container">
-        <div class="row">
-            <!-- Início texto galerias -->
-            <div class="col-12">
-                <section class="texto-galeria">
-                    <h2>Conheça nossa galeria</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero placeat quia enim laborum? Maxime sequi, nisi, similique modi maiores eligendi voluptatibus aliquid iste pariatur sint magni ab iusto possimus suscipit?</p>
-                </section>
-            </div>
-            <!-- Fim texto galerias -->
-            <!-- Início imagem 1 da galeria -->
-            <div class="gallery col-6 col-md-3">
-                <img src="./img/1080x1080.jpg" class="img-fluid" alt="img-galeria">
-            </div>
-            <!-- Fim de imagem 1 da galeria -->
-
-            <!-- Início imagem 2 da galeria -->
-            <div class="gallery col-6 col-md-3">
-                <img src="./img/1080x1080.jpg" class="img-fluid" alt="img-galeria">
-            </div>
-            <!-- Fim de imagem 2 da galeria -->
-
-            <!-- Início imagem 3 da galeria -->
-            <div class="gallery col-6 col-md-3">
-                <img src="./img/1080x1080.jpg" class="img-fluid" alt="img-galeria">
-            </div>
-            <!-- Fim de imagem 3 da galeria -->
-
-            <!-- Início imagem 4 da galeria -->
-            <div class="gallery col-6 col-md-3">
-                <img src="./img/1080x1080.jpg" class="img-fluid" alt="img-galeria">
-            </div>
-            <!-- Fim de imagem 4 da galeria -->
-
-            <!-- Início imagem 5 da galeria -->
-            <div class="gallery col-6 col-md-3">
-                <img src="./img/1080x1080.jpg" class="img-fluid" alt="img-galeria">
-            </div>
-            <!-- Fim de imagem 5 da galeria -->
-
-            <!-- Início imagem 6 da galeria -->
-            <div class="gallery col-6 col-md-3">
-                <img src="./img/1080x1080.jpg" class="img-fluid" alt="img-galeria">
-            </div>
-            <!-- Fim de imagem 6 da galeria -->
-
-            <!-- Início imagem 7 da galeria -->
-            <div class="gallery col-6 col-md-3">
-                <img src="./img/1080x1080.jpg" class="img-fluid" alt="img-galeria">
-            </div>
-            <!-- Fim de imagem 7 da galeria -->
-
-            <!-- Início imagem 8 da galeria -->
-            <div class="gallery col-6 col-md-3">
-                <img src="./img/1080x1080.jpg" class="img-fluid" alt="img-galeria">
-            </div>
-            <!-- Fim de imagem 8 da galeria -->
-
-            <!-- Início imagem 9 da galeria -->
-            <div class="gallery col-6 col-md-3">
-                <img src="./img/1080x1080.jpg" class="img-fluid" alt="img-galeria">
-            </div>
-            <!-- Fim de imagem 9 da galeria -->
-
-            <!-- Início imagem 10 da galeria -->
-            <div class="gallery col-6 col-md-3">
-                <img src="./img/1080x1080.jpg" class="img-fluid" alt="img-galeria">
-            </div>
-            <!-- Fim de imagem 10 da galeria -->
-
-            <!-- Início imagem 11 da galeria -->
-            <div class="gallery col-6 col-md-3">
-                <img src="./img/1080x1080.jpg" class="img-fluid" alt="img-galeria">
-            </div>
-            <!-- Fim de imagem 11 da galeria -->
-
-            <!-- Início imagem 12 da galeria -->
-            <div class="gallery col-6 col-md-3">
-                <img src="./img/1080x1080.jpg" class="img-fluid" alt="img-galeria">
-            </div>
-            <!-- Fim de imagem 12 da galeria -->
-
-        </div>
-
-    </div>
-
-</div>
- <!-- Fim da Galeria -->
+ <!-- Fim whatsapp -->
  <!-- Início footer --> 
  <footer class="rodape">
     <div class="container">
@@ -298,6 +159,7 @@
             <div class="col-md-4">
                 <figure class="redes-sociais">
                     <a href="#"><img src="img/insta.png"></a>
+                    <a href="#"><img src="img/face.png.png"></a>
                     <a href="#"><img src="img/youtube_.png"></a>
                 </figure>
                 <br>
