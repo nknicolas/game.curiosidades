@@ -169,6 +169,11 @@ display: none;
 }
 .section-banner-home img{
     height: 500px;
+    margin: auto;
+    width: 70%;
+    max-height: 500px;
+    display: block;
+
 }
 .section-banner-home .texto-banner{
     margin-top: 30px;
@@ -508,4 +513,49 @@ display: none;
         transform: scale(1.3);
         filter: brightness(200%);
     }
+}
+.whatsapp .pulse {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    animation: quica .4s cubic-bezier(.53, -0.03, .67, 1.06);
+    animation-duration: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes pulse {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(100%);
+        width: 60px;
+        height: 30px;
+    }
+}
+
+/* Início CSS Card Produtos */
+.card img {
+    max-height: 300px;
+    width: 100%;
+}
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+}
+.overlay .mask {
+    opacity: 0;
+    transition: all .4s ease-in-out;
+}
+.overlay mask:hover {
+    opacity: 1;
+}
+.text-center .mb-5 {
+    margin-top: 20px;
 }
